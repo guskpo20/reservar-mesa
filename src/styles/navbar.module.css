@@ -30,7 +30,15 @@ header{
     font-size: 1rem;
 }
 
+.active_link{
+    color: orange !important;
+}
+
 .links:hover{
+    color: orange;
+}
+
+.active_link{
     color: orange;
 }
 
