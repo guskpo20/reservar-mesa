@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*
+Rojo: #ba2b23
+Naranja: #e1790c
+Amarillo: #eec76c
+Gris: #dac9c1
+Negro: #3b3a38
+*/
+
+
+
 
 *{
     padding:0;
     margin: 0;
+    font-family: 'Outfit', sans-serif;
 }
 
 body{
-    background-color: black;
+    background-color: #dac9c1;
+    background-image: url("../images/main_background.jpg") ;
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }

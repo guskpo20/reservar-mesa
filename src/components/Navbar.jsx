@@ -8,7 +8,7 @@ function Navbar() {
     return (
     <header>
         <div className={styles.navbar}>
-            <img className={styles.logo} src={"../../public/images/logo.jpg"}></img>
+            <img className={styles.logo} src={"../../public/images/logo.png"}></img>
             <ul className={styles.list}>
                 <li><NavLink to="/" className={({ isActive }) => (isActive ? `active_link ${styles.links}` : `${styles.links}`) }>Inicio</NavLink></li>
                 <li><NavLink to="/menu" className={({ isActive }) => (isActive ? `active_link ${styles.links}` : `${styles.links}`) }>Menu</NavLink></li>

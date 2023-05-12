@@ -1,7 +1,6 @@
 header{
     position: relative;
     padding: 0 2rem;
-    background-color: grey;
 }
 
 .navbar{
@@ -16,7 +15,9 @@ header{
 
 .logo{
     height: 60px;
+    padding: 2px 0;
 }
+
 
 .list{
     list-style: none;
@@ -26,20 +27,17 @@ header{
 
 .links{
     text-decoration: none;
-    color: white;
+    color: #dac9c1;
+    font-weight: bold;
     font-size: 1rem;
 }
 
 .active_link{
-    color: orange !important;
+    color: #e1790c !important;
 }
 
 .links:hover{
-    color: orange;
-}
-
-.active_link{
-    color: orange;
+    color: #e1790c;
 }
 
 .toggle_btn{
@@ -53,7 +51,7 @@ header{
 .toggle_btn_burguer{
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: #dac9c1;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
@@ -64,7 +62,7 @@ header{
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: #dac9c1;
     border-radius: 5px;
     transition: all .5s ease-in-out;
 }
@@ -92,10 +90,10 @@ header{
 
 .login{
     text-decoration: none;
-    color: white;
-    font-size: 0.8rem;
+    color: #000000;
+    font-size: 1rem;
     font-weight: bold;
-    background-color: orange;
+    background-color: #e1790c;
     padding: 0.5rem 1rem;
     border:none;
     outline: none;
@@ -109,6 +107,7 @@ header{
 
 .dropdown_menu{
     display: none;
+    z-index: 3;
     position: absolute;
     right: 2rem;
     top:60px;
