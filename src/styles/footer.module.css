@@ -1,12 +1,12 @@
 footer{
     position: relative;
+    bottom: 0;
     height: 150px;
-    padding: 40px 2rem;
     background-color: rgba(3, 2, 2, 1);
-    
 }
 
 .main_footer{
+    padding-top: 40px;
     display: flex;
     justify-content: space-around;
     align-items: top;
@@ -42,7 +42,8 @@ footer{
 }
 
 .footer_rights{
-    margin-top: 50px;
+    padding-top: 20px;
+    background-color: rgba(3, 2, 2, 1);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -50,20 +51,23 @@ footer{
 
 .footer_rights p{
     color: #dac9c1 ;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 800px){
     footer{
+        width: 100%;
         height: auto;
     }
     .main_footer{
         display: block;
+        width: 300px;
+        margin: 0 auto;
     }
 
     .main_footer>div{
         max-width: 300px;
         width: 100%;
-        margin: 0 auto;
         margin-bottom: 20px;
     }
 }

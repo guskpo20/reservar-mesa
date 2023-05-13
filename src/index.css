@@ -23,7 +23,7 @@ body{
     background-color: #dac9c1;
     background-image: url("../images/main_background.jpg") ;
     height: 100vh;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }

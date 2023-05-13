@@ -121,7 +121,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 180px;
+    height: 290px;
 }
 
 .dropdown_menu li{
@@ -137,8 +137,13 @@ header{
     justify-content: center;
 }
 
+.navbar_buttons{
+    display: flex;
+    gap: 10px;
+}
 
-@media (max-width: 545px){
+
+@media (max-width: 768px){
     .navbar .login,
     .navbar .links{
         display: none;
@@ -148,10 +153,6 @@ header{
         display: flex;
         justify-content: center;
         align-items: center; 
-    }
-
-    .navbar .dropdown_menu{
-        display: block;
     }
 
     .dropdown_menu{

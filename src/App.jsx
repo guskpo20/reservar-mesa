@@ -3,9 +3,11 @@ import { Routes, Route } from "react-router-dom";
 /* PAGES */
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Menu from "./pages/Menu";
 import NotFound from "./pages/NotFound";
+import Reserva from "./pages/Reserva";
+import Login from "./pages/Login";
 
 /* Components */
 import Layout from "./components/Layout";
@@ -20,7 +22,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/menu" element={<Menu/>}/>
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/reserva" element={<Reserva />} />
           <Route path="*" element={<NotFound />} />
         </Route>
     

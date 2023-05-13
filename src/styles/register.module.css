@@ -1,0 +1,125 @@
+.register_section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    color:#dac9c1;
+    background-color: rgba(0,0,0,0.4);
+    margin:20px auto;
+}
+
+.succes_section{
+    display: flex;
+    max-width: 420px;
+    width: auto;
+    color:#dac9c1;
+    background-color: rgba(0,0,0,0.4);
+    gap: 30px;
+    min-height:50px;
+    margin:20px auto;
+    margin-bottom: 255px;
+    
+}
+
+.succes_section h3{
+    font-size: 2rem;
+    color: #e1790c;
+}
+
+.register_section label, .succes_section h3 , .succes_section p{
+    color:#dac9c1;
+}
+
+.register_section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.register_section a, .succes_section a:visited {
+    color: #fff;
+}
+
+.register_section input[type="text"],
+.succes_section input[type="password"],
+.succes_section button,
+.succes_section textarea {
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.register_section label,
+.succes_section button {
+  margin-top: 1rem;
+}
+
+.register_section button {
+  padding: 0.5rem;
+  background-color: #e1790c;
+  color: #fff;
+}
+
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+@media (max-width: 800px){
+    .register_section section{
+        width: 90%;
+    }
+}
+
+@media (max-width: 360px){
+    .register_section section{
+        margin-bottom: 0;
+    }
+}

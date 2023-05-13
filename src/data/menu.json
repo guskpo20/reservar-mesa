@@ -4,41 +4,41 @@
         "titulo": "Nombre del plato",
         "precio": "PRECIO",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
-        "categoria": "1"
+        "categoria": "Entrada"
     },
     {
         "image": "images/comida/comida1.jpg",
         "titulo": "Nombre del plato",
         "precio": "PRECIO",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
-        "categoria": "1"
+        "categoria": "Entrada"
     },
     {
-        "image": "images/comida/comida1.jpg",
+        "image": "images/comida/comida2.jpg",
         "titulo": "Nombre del plato",
         "precio": "PRECIO",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
-        "categoria": "2"
+        "categoria": "Principal"
     },
     {
-        "image": "images/comida/comida1.jpg",
+        "image": "images/comida/comida3.jpg",
         "titulo": "Nombre del plato",
         "precio": "PRECIO",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
-        "categoria": "3"
+        "categoria": "Postre"
     },
     {
-        "image": "images/comida/comida1.jpg",
+        "image": "images/comida/comida3.jpg",
         "titulo": "Nombre del plato",
         "precio": "PRECIO",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
-        "categoria": "3"
+        "categoria": "Postre"
     },
     {
-        "image": "images/comida/comida1.jpg",
+        "image": "images/comida/comida3.jpg",
         "titulo": "Nombre del plato",
         "precio": "PRECIO",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
-        "categoria": "3"
+        "categoria": "Postre"
     }
 ]
