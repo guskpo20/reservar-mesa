@@ -1,0 +1,44 @@
+[
+    {
+        "image": "images/comida/comida1.jpg",
+        "titulo": "Nombre del plato",
+        "precio": "PRECIO",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
+        "categoria": "1"
+    },
+    {
+        "image": "images/comida/comida1.jpg",
+        "titulo": "Nombre del plato",
+        "precio": "PRECIO",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
+        "categoria": "1"
+    },
+    {
+        "image": "images/comida/comida1.jpg",
+        "titulo": "Nombre del plato",
+        "precio": "PRECIO",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
+        "categoria": "2"
+    },
+    {
+        "image": "images/comida/comida1.jpg",
+        "titulo": "Nombre del plato",
+        "precio": "PRECIO",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
+        "categoria": "3"
+    },
+    {
+        "image": "images/comida/comida1.jpg",
+        "titulo": "Nombre del plato",
+        "precio": "PRECIO",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
+        "categoria": "3"
+    },
+    {
+        "image": "images/comida/comida1.jpg",
+        "titulo": "Nombre del plato",
+        "precio": "PRECIO",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perspiciatis corrupti quasi impedit dignissimos a?",
+        "categoria": "3"
+    }
+]

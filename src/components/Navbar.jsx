@@ -10,9 +10,9 @@ function Navbar() {
         <div className={styles.navbar}>
             <img className={styles.logo} src={"../../public/images/logo.png"}></img>
             <ul className={styles.list}>
-                <li><NavLink to="/" className={({ isActive }) => (isActive ? `active_link ${styles.links}` : `${styles.links}`) }>Inicio</NavLink></li>
-                <li><NavLink to="/menu" className={({ isActive }) => (isActive ? `active_link ${styles.links}` : `${styles.links}`) }>Menu</NavLink></li>
-                <li><NavLink to="/about" className={({ isActive }) => (isActive ? `active_link ${styles.links}` : `${styles.links}`) }>Sobre nosotros</NavLink></li>
+                <li><NavLink to="/" className={({ isActive }) => (isActive ? `${styles.active_link} ${styles.links}` : `${styles.links}`) }>Inicio</NavLink></li>
+                <li><NavLink to="/menu" className={({ isActive }) => (isActive ? `${styles.active_link} ${styles.links}` : `${styles.links}`) }>Menu</NavLink></li>
+                <li><NavLink to="/about" className={({ isActive }) => (isActive ? `${styles.active_link} ${styles.links}` : `${styles.links}`) }>Sobre nosotros</NavLink></li>
             </ul>
             <Link to="/login" className={`${styles.login}`}>Identificarse</Link>
             <div className={expandedNavbar ? `${styles.toggle_btn} ${styles.toggle_btn_open}` : `${styles.toggle_btn}` } onClick={() => setExpandedNavbar(!expandedNavbar)}>
