@@ -14,20 +14,21 @@
 
 .succes_section{
     display: flex;
+    flex-direction: column;
     max-width: 420px;
     width: auto;
     color:#dac9c1;
     background-color: rgba(0,0,0,0.4);
     gap: 30px;
-    min-height:50px;
-    margin:20px auto;
-    margin-bottom: 255px;
-    
+    min-height:180px;
+    height: auto;
+    margin:160px auto;
+    margin-bottom: 355px;
 }
 
 .succes_section h3{
     font-size: 2rem;
-    color: #e1790c;
+    color: #e1790c !important;
 }
 
 .register_section label, .succes_section h3 , .succes_section p{
