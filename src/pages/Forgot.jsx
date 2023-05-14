@@ -1,43 +1,32 @@
-import {useRef, useState, useEffect} from "react"
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect} from "react"
+import { Link } from "react-router-dom";
 import styles from "../styles/login.module.css"
 import axios from "../api/axios";
-
 const EMAILREGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-const REGISTER_URL = "/user/signin"
-
-function Login() {
-  let navigateTo = useNavigate();
-  const errRef = useRef();
+const REGISTER_URL = "/user/forgot"
+function Forgot() {
   const [user, setUser] = useState("")
-
-  const [pwd, setPwd] = useState("")
-
   const [errMsg, setErrMsg] = useState("")
+  const [successMsg, setSuccessMsgMsg] = useState("")
 
   useEffect(() => {
     return () => {
       setErrMsg("")
     };
-  }, [user, pwd])
+  }, [user])
 
   const handleSubmit = async (e) =>{
     e.preventDefault()
     const userValid = EMAILREGEX.test(user);
-    const pswValid = pwd.length > 8;
 
     if(!userValid){
+        setSuccessMsgMsg("")
       setErrMsg("Ingrese un mail valido")
       return
     }
 
-    if(!pswValid){
-      setErrMsg("Contraseña invalida, minimo 8 caracteres")
-      return
-    }
-
     try {
-      const response = await axios.post(REGISTER_URL, JSON.stringify({email: user, password: pwd,}),{
+      const response = await axios.post(REGISTER_URL, JSON.stringify({email: user}),{
         headers: { 
           "Content-Type" : "application/json",
           'Accept': 'application/json',
@@ -45,13 +34,7 @@ function Login() {
         origin: true
         }
       )
-      console.log(JSON.stringify(response.data))
-      if(response.data.status === "Failed"){
-        setErrMsg("Credenciales invalidas")
-        //borrar fields
-        return
-      }
-      navigateTo('/')
+      setSuccessMsgMsg("El email ha sido enviado!")
       //borrar fields
     } catch (error) {
       console.log(error)
@@ -60,8 +43,9 @@ function Login() {
 
   return (
     <section className={styles.login_section}>
-      <p ref={errRef} className={errMsg ? `${styles.errmsg}` : `styles.offscreen`} aria-live="assertive">{errMsg}</p>
-      <h3> Inicia sesion </h3>
+      <p className={errMsg ? `${styles.errmsg}` : `styles.offscreen`} aria-live="assertive">{errMsg}</p>
+      <p className={successMsg ? `${styles.successmsg}` : `styles.offscreen`} aria-live="assertive">{successMsg}</p>
+      <h3> Recuperar contraseña </h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">
           Email:
@@ -73,16 +57,7 @@ function Login() {
           onChange={(e) => setUser(e.target.value)}
           required
           />
-        <label htmlFor="password">
-          Contraseña:
-        </label>
-        <input 
-          type="password"
-          id="password"
-          onChange={(e) => setPwd(e.target.value)}
-          required
-          />
-        <button>Iniciar Sesion</button>
+        <button>Obtener nueva contraseña!</button>
       </form>
       <br/>
       <p>
@@ -90,11 +65,11 @@ function Login() {
         <Link to="/register">Registrate</Link>
       </p>
       <p>
-        Olvidaste la contraseña? <br/>
-        <Link to="/forgot">Resetear contraseña</Link>
+        Si te acuerdas tus credenciales <br/>
+        <Link to="/login">Inicia sesion</Link>
       </p>
     </section>
   )
 }
 
-export default Login
+export default Forgot

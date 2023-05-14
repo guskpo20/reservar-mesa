@@ -184,6 +184,10 @@ function Login() {
           Ya tienes cuenta? <br/>
           <Link to="/login">Identificarse</Link>
         </p>
+        <p>
+          Olvidaste la contraseña? <br/>
+          <Link to="/forgot">Resetear contraseña</Link>
+        </p>
       </section>
       )}
     </>

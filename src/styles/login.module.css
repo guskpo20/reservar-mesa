@@ -95,7 +95,15 @@ textarea {
 
 .errmsg {
     background-color: lightpink;
-    color: firebrick;
+    color: black !important;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.successmsg {
+    background-color: rgb(39, 158, 39);
+    color: #dac9c1 !important;
     font-weight: bold;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
