@@ -1,7 +1,8 @@
-import {useRef, useState, useEffect} from "react"
+import {useRef, useState, useEffect, useContext} from "react"
 import { Link, useNavigate } from "react-router-dom";
 import styles from "../styles/login.module.css"
 import axios from "../api/axios";
+import { setToken } from "../helpers/aut-helpers";
 
 const EMAILREGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const REGISTER_URL = "/user/signin"
@@ -28,11 +29,15 @@ function Login() {
 
     if(!userValid){
       setErrMsg("Ingrese un mail valido")
+      setPwd("")
+      setUser("")
       return
     }
 
     if(!pswValid){
       setErrMsg("Contraseña invalida, minimo 8 caracteres")
+      setPwd("")
+      setUser("")
       return
     }
 
@@ -45,14 +50,17 @@ function Login() {
         origin: true
         }
       )
-      console.log(JSON.stringify(response.data))
       if(response.data.status === "Failed"){
         setErrMsg("Credenciales invalidas")
-        //borrar fields
+        setPwd("")
+        setUser("")
         return
       }
+      const accessToken = response?.data?.token
       navigateTo('/')
-      //borrar fields
+      setToken(accessToken)
+      setPwd("")
+      setUser("")
     } catch (error) {
       console.log(error)
     }
